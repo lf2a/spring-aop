@@ -9,10 +9,12 @@ public class MainDemoApp {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext((DemoConfig.class));
 
         AccountDAO account = context.getBean("accountDAO", AccountDAO.class);
-        account.addAccount();
+        account.addAccount(new Account(), false);
+        account.doWork();
 
         MembershipDAO membershipDAO = context.getBean("membershipDAO", MembershipDAO.class);
         membershipDAO.addSillyMember();
+        membershipDAO.goSleep();
 
         context.close();
     }
