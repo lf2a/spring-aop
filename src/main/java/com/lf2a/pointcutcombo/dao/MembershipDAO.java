@@ -1,4 +1,4 @@
-package com.lf2a.pointcutcombo.pointcut.dao;
+package com.lf2a.pointcutcombo.dao;
 
 import org.springframework.stereotype.Component;
 

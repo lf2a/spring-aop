@@ -1,4 +1,4 @@
-package com.lf2a.pointcutcombo.pointcut;
+package com.lf2a.pointcutcombo;
 
 public class Account {
     private String name;

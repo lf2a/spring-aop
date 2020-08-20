@@ -1,4 +1,4 @@
-package com.lf2a.pointcutcombo.pointcut.aspect;
+package com.lf2a.pointcutcombo.aspect;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -9,17 +9,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyDemoLoggingAspect {
 
-    @Pointcut("execution(* com.lf2a.pointcutcombo.pointcut.dao.*.*(..))")
+    @Pointcut("execution(* com.lf2a.pointcutcombo.dao.*.*(..))")
     // vai executar todos os metodos de todas as classes do pacote "com.lf2a.aopdemo.dao" e que tenham quaisquer modificadores de acesso
     // e que possuem quaisquer parametros
     private void forDaoPackage() {
     }
 
-    @Pointcut("execution(* com.lf2a.pointcutcombo.pointcut.dao.*.get*(..))")
+    @Pointcut("execution(* com.lf2a.pointcutcombo.dao.*.get*(..))")
     private void getter() {
     }
 
-    @Pointcut("execution(* com.lf2a.pointcutcombo.pointcut.dao.*.set*(..))")
+    @Pointcut("execution(* com.lf2a.pointcutcombo.dao.*.set*(..))")
     private void setter() {
     }
 

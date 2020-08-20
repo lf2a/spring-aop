@@ -1,6 +1,6 @@
-package com.lf2a.pointcutcombo.pointcut.dao;
+package com.lf2a.pointcutcombo.dao;
 
-import com.lf2a.pointcutcombo.pointcut.Account;
+import com.lf2a.pointcutcombo.Account;
 import org.springframework.stereotype.Component;
 
 @Component

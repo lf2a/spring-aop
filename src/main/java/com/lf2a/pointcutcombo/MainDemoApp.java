@@ -1,7 +1,7 @@
-package com.lf2a.pointcutcombo.pointcut;
+package com.lf2a.pointcutcombo;
 
-import com.lf2a.pointcutcombo.pointcut.dao.AccountDAO;
-import com.lf2a.pointcutcombo.pointcut.dao.MembershipDAO;
+import com.lf2a.pointcutcombo.dao.AccountDAO;
+import com.lf2a.pointcutcombo.dao.MembershipDAO;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class MainDemoApp {
